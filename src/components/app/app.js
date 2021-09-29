@@ -12,7 +12,6 @@ const App=(props)=>{
 const [SelectedGroup,setSelectedGroup]=useState("")
 const [showProducts,setShowProducts]=useState("")
 const [selectedProducts,setSelectedProducts]=useState("")
-
 const [hide,setHide]=useState(false)
 const hideAll=()=>{
   setHide(true)
