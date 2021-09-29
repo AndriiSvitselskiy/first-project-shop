@@ -1,0 +1,12 @@
+.divMain{
+    background: #221F1F;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+h1{width: 100%;
+margin: 20px;}

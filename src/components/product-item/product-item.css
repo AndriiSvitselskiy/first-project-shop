@@ -1,0 +1,45 @@
+.productParent{
+    display: flex;
+    justify-content: space-between;
+}
+/* .productParent>div{
+   width: 20%;
+} */
+.productElement{
+    width: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 4px white,inset 0 0 5px 4px #221F1F;
+    min-height: 200px;
+    align-content: center;
+    align-items: center;
+    
+
+}
+.productElement>div{
+    width: 50%;
+}
+h3{
+    margin: 10px 0;
+    color: red;
+}
+.sorry{
+    width: 100%;
+    color: red;
+    margin-top: 100px;
+}
+.productElement img{
+    width: 70%;
+    
+}
+.parchaseButton{
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 50px;
+}

@@ -1,0 +1,29 @@
+.basketProduct img {
+    width: 90%;
+}.basketProduct{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.basketProduct>div:nth-child(1){
+    width: 70%;
+}
+.products{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.products>div:nth-child(1){
+    width: 80%;
+}
+.products>div:nth-child(2){
+    width: 20%;
+}
+.buy{
+    width: 20%;
+}

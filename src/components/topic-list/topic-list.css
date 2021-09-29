@@ -1,0 +1,41 @@
+.navItem{
+    padding: 5px;
+     margin: 5px;
+     font-size: 1.2rem;
+     display: flex;
+     height: 50px;
+     align-items: center;
+     cursor: pointer;
+ }
+ .navItem div:nth-child(1){
+ width: 95%;
+ display: flex;
+ align-items: center;
+ }
+ .navItem div:nth-child(2){
+     width: 5%;
+     }
+ .navItem:hover{
+     transition: 0.4s;
+     border: 1px solid black;
+     box-shadow: inset 0 0 5px 1px black,0 0 5px 1px black;
+ color: red;
+    }
+ .navItem img{
+ margin-right: 10px;
+ }
+ 
+.navigation{
+    background: white;
+}
+
+ .navPost{
+    margin: 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.navPost>div{
+    width: 30%;
+}
