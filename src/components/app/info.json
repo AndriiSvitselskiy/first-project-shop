@@ -6,47 +6,74 @@
       "list": [{
         "id":"ic0id0",
         "model": "Ноутбук Acer Aspire 7 A715-75G-54HY (NH.Q9AEU.00G) Charcoal Black",
-        "price": "100$"
+        "price": 100
       },{
         "id":"ic0id1",
         "model": "Ноутбук Apple MacBook Air 13\" M1 256GB 2020 (MGN63) Space Gray",
-        "price": "200$"
+        "price": 200
       },{
         "id":"ic0id2",
         "model": "Ноутбук Asus ZenBook Flip UX363JA-EM120T (90NB0QT1-M04710) Pine Grey",
-        "price": "300$"
+        "price": 300
       },{
         "id":"ic0id3",
         "model": "Ноутбук Acer Aspire 3 A315-57G-336G (NX.HZREU.01S) Charcoal Black",
-        "price": "400$"
+        "price": 400
       },{
         "id":"ic0id4",
         "model": "Комп'ютер Asus S300MA (90PF02C2-M04860)",
-        "price": "500$"
+        "price": 500
       },{
         "id":"ic0id5",
         "model": "Моноблок Lenovo IdeaCentre AIO 3 22IIL5 (F0FQ005HUA) Foggy White",
-        "price": "600$"
+        "price": 600
       }
       ,{
         "id":"ic0id6",
         "model": "Комп'ютер Everest Home 4090 (4090_9104)",
-        "price": "700$"
+        "price": 700
       },{
         "id":"ic0id7",
         "model": "Монітор 27 Samsung Odyssey G5 LC27G54T Black (LC27G54TQWIXCI)",
-        "price": "800$"
+        "price": 800
       }
     ]
     
     },
 
-    { "category": "Побутова технiка", "icon": 1, "list": [{}] },
-    { "category": "Сантехнiка та ремонт", "icon": 2, "list": [{}] },
-    { "category": "Одяг,взуття та прикраси", "icon": 3, "list": [{}] },
-    { "category": "Канцтовари та книги", "icon": 4, "list": [{}] },
-    { "category": "Послуги та сервiс", "icon": 5, "list": [{}] },
-    { "category": "Товари для дому", "icon": 6, "list": [{}] },
+    { "category": "Побутова технiка", "icon": 1, "list": [{
+      "id":"ic1id1",
+      "model": "Пральна машина вузька LG F2J3HS2W",
+      "price": 9999
+    }] },
+    { "category": "Сантехнiка та ремонт", "icon": 2, "list": [{  
+      "id":"ic2id1",
+      "model": "Ванна MIRAGGIO Siena 180х80 із сифоном PREVEX 3212007",
+      "price": 27826}] },
+    { "category": "Одяг,взуття та прикраси", "icon": 3, "list": [{
+      "id":"ic3id1",
+      "model": "Толстовка New Balance MJ03907PGM L Синій (194389372770)",
+      "price": 449
+    },{
+      "id":"ic3id2",
+      "model": "Вітровка New Balance MJ11242BM S Чорна (195173830933)",
+      "price": 2239
+    }] },
+    { "category": "Канцтовари та книги", "icon": 4, "list": [{
+      "id":"ic4id1",
+      "model": "Олівці кольорові BIC Evolution 12 кольорів (3086124001632)",
+      "price": 107
+    }] },
+    { "category": "Послуги та сервiс", "icon": 5, "list": [{
+      "id":"ic5id1",
+      "model": "Захист від пошкоджень (200-1000)",
+      "price": 69
+    }] },
+    { "category": "Товари для дому", "icon": 6, "list": [{
+      "id":"ic6id1",
+      "model": "Крісло офісне RZTK Dzen Orange/Black (DZN01 OB)",
+      "price": 2599
+    }] },
     { "category": "Дача, сад та огород", "icon": 7, "list": [{}] },
     { "category": "Краса та здоров'я", "icon": 8, "list": [{}] },
     { "category": "Алкогольнi напої та продукти", "icon": 9, "list": [{}] },

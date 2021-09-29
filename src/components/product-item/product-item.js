@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './product-item.css'
 const ProductItem=({obj,purchasedItem})=>{
 // const [product,setProduct]=useState("")
@@ -18,7 +17,7 @@ purchasedItem(obj)
     </div>
     <div>
         <h4>{object.model}</h4>
-        <h3>Цiна: {object.price}</h3>
+        <h3>Цiна: {object.price} $</h3>
         </div>
     <button className="parchaseButton"
     onClick={showProduct}>В кошик</button>

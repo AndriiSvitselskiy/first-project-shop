@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import './main.css'
 import ProductItem from '../product-item'
 const Main=({list,products,addProducts,hide})=>{
@@ -21,7 +21,7 @@ if(hide){
       })
   }else{elements=""}
     return(
-        <div className={className}>
+        <div className={className} key="1">
             <h1>{list}</h1>
             {elements}  
         </div>

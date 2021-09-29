@@ -1,4 +1,4 @@
-import React, { useRef }  from "react";
+import React  from "react";
 import Header from '../header'
 import TopicList from "../topic-list";
 import Main from '../main'
@@ -6,18 +6,18 @@ import Basket from '../basket'
 import './app.css'
 import { useState } from "react";
 import allProducts from './info.json'
-const itemsArray=[]
+let itemsArray=[]
 
 const App=(props)=>{
 const [SelectedGroup,setSelectedGroup]=useState("")
 const [showProducts,setShowProducts]=useState("")
 const [selectedProducts,setSelectedProducts]=useState("")
 const [hide,setHide]=useState(false)
+const [purchased,setPurchased]=useState(0)
 const hideAll=()=>{
   setHide(true)
   setBasket(false)
-  console.log("+")
-}
+ }
 const [basket,setBasket]=useState(true)
 
  const choseCategory=(category)=>{
@@ -27,7 +27,6 @@ const [basket,setBasket]=useState(true)
       allProducts.list.forEach(function(item){
     if(item.category===category){
               setShowProducts(item.list)
-              console.log(showProducts)
       }
    })
  }
@@ -37,12 +36,18 @@ const [basket,setBasket]=useState(true)
     setSelectedProducts(object)
     itemsArray.push(object)
     setproductList(itemsArray)
-    console.log(itemsArray)
+    setPurchased(purchased+1)  
  }
-         return(
+ const clearList=()=>{
+        itemsArray=[]
+        setproductList(itemsArray)
+        setPurchased(0)
+ }
+          return(
         <div>
           <Header products={selectedProducts} 
                   itemsArray={productList}
+                  purchased={purchased}
                   hideAll={hideAll}/>
           <TopicList list={allProducts.list} 
                      selected={(category)=>choseCategory(category)}/>
@@ -51,7 +56,8 @@ const [basket,setBasket]=useState(true)
                 addProducts={addProductToArray}
                 hide={hide}/>
           <Basket style={basket}
-                  itemsArray={productList}/>
+                  itemsArray={productList}
+                  clearList={clearList}/>
         </div>
     )
 }

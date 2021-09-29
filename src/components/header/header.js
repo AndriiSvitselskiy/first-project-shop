@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import './header.css'
 import logo from './Img/logo_n.svg'
 import basket from './Img/basket.png'
 
-const Header=({itemsArray,hideAll})=>{
+const Header=({itemsArray,hideAll,purchased})=>{
        const showProducts=()=>{
         hideAll()
         }
@@ -20,7 +20,7 @@ const Header=({itemsArray,hideAll})=>{
                  alt="basket" 
                  onClick={showProducts}
                  className="basket"/>
-            <span>{itemsArray.length}</span>
+            <span>{purchased}</span>
         </div>
     </div>
         </>

@@ -24,14 +24,13 @@ const TopicList=({list,selected,showAll})=>{
     ,Img14,Img15,Img16,Img17]
   
     const elements=list.map(item=>{
-        const {icon,...itemProps}=item
-              return (
+      return (
         
-            <div className="navItem" key={icon} onClick={()=>{
+            <div className="navItem" key={item.icon} onClick={()=>{
                 selected(item.category)
             }}>
                 <div>
-                    <img src={mas[icon]} alt="icon"/> 
+                    <img src={mas[item.icon]} alt="icon"/> 
                     {item.category}                   
                 </div>
                 <div>{'>'}</div>
