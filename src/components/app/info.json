@@ -74,14 +74,74 @@
       "model": "Крісло офісне RZTK Dzen Orange/Black (DZN01 OB)",
       "price": 2599
     }] },
-    { "category": "Дача, сад та огород", "icon": 7, "list": [{}] },
-    { "category": "Краса та здоров'я", "icon": 8, "list": [{}] },
-    { "category": "Алкогольнi напої та продукти", "icon": 9, "list": [{}] },
+    { "category": "Дача, сад та огород", "icon": 7, "list": [{
+      "id":"ic7id1",
+      "model": "Басейн дитячий надувний Jilong 17218 100 x 22 см (JL17218)",
+      "price": 210
+    },{
+      "id":"ic7id2",
+      "model": "Тачка садова/будівельна 2-колісна Kanat Troyka TRD-481 80 л (150 кг) Orange",
+      "price": 1399
+    }] },
+    { "category": "Краса та здоров'я", "icon": 8, "list": [{
+      "id":"ic8id1",
+      "model": "Парфумована вода унісекс Tiziana Terenzi Kirke 100 мл (8016741072482)",
+      "price": 2475
+    },{
+      "id":"ic8id2",
+      "model": "Маска-піта XoKo неопренова з клапаном Хакі (XK-PTR-XK)",
+      "price": 65
+    },{
+      "id":"ic8id3",
+      "model": "Медичні маски тришарові нестерильні Medicare з гумовими петлями 50 шт. Біло-блакитні (ME)",
+      "price": 89
+    }] },
+    { "category": "Алкогольнi напої та продукти", "icon": 9, "list": [{
+      "id":"ic9id1",
+      "model": "Ромовий напій Kraken Black Spiced 0.7 л 40% (811538013062)",
+      "price": 599
+    },{
+      "id":"ic9id2",
+      "model": "Ромовий напій Oakheart Original 12 місяців витримки 1 л 35% (5010677740203)",
+      "price": 319
+    },{
+      "id":"ic9id3",
+      "model": "Коньяк Vaudon Cognac Vaudon XO 0.7 л 40% (3760044966515)",
+      "price": 2999
+    }] },
     { "category": "Тури та вiпдочинок", "icon": 10, "list": [{}] },
-    { "category": "Товари для геймерiв", "icon": 11, "list": [{}] },
-    { "category": "Iнструменти та автотовари", "icon": 12, "list": [{}] },
-    { "category": "Спорт i захоплення", "icon": 13, "list": [{}] },
-    { "category": "Дитячi товари", "icon": 14, "list": [{}] },
+    { "category": "Товари для геймерiв", "icon": 11, "list": [{
+      "id":"ic11id1",
+      "model": "Ігрова приставка PS5 PlayStation 5 Digital Edition + Пульт ДУ PlayStation 5 Media Remote + Камера PlayStation 5 HD Camera",
+      "price": 17899
+    }] },
+    { "category": "Iнструменти та автотовари", "icon": 12, "list": [{
+      "id":"ic12id1",
+      "model": "WestLake SU318 235/55 R18 100V",
+      "price": 2088
+    },{
+      "id":"ic12id2",
+      "model": "Накидка на сидіння з підігрівом Lavita LA 140401BK 60 Вт Black (LA 140401BK)",
+      "price": 285
+    },{
+      "id":"ic12id3",
+      "model": "Чохол-тент для автомобіля Kegel-Blazusiak Optimal Garage розмір L SUV/Off Road (5-4330-241-2092)",
+      "price": 2735
+    }] },
+    { "category": "Спорт i захоплення", "icon": 13, "list": [{
+      "id":"ic13id1",
+      "model": "Велосипед Cross Focus 2021 Gray-blue (26CWS21-003327)",
+      "price": 5099
+    }] },
+    { "category": "Дитячi товари", "icon": 14, "list": [{
+      "id":"ic14id1",
+      "model": "Підгузки-трусики Pampers Pants Розмір 5 (12-17 кг) 152 шт (8001090808004_8006540068601)",
+      "price": 1039
+    },{
+      "id":"ic14id2",
+      "model": "Конструктор LEGO City Police Перевезення поліцейського гелікоптера 317 деталей (60244)",
+      "price": 1144
+    }] },
     { "category": "Товари для бiзнесу", "icon": 15, "list": [{}] },
     { "category": "Смартфони,ТВ та електронiка", "icon": 16, "list": [{}] },
     { "category": "Акцiї", "icon": 17, "list": [{}] }

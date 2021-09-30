@@ -18,7 +18,7 @@ import Img15 from './Icon/15.png'
 import Img16 from './Icon/16.png'
 import Img17 from './Icon/17.png'
 
-const TopicList=({list,selected,showAll})=>{
+const TopicList=({list,selected})=>{
       let mas=[Img0,Img1,Img2,Img3,Img4,Img5
         ,Img6,Img7,Img8,Img9,Img10,Img11,Img12,Img13
     ,Img14,Img15,Img16,Img17]

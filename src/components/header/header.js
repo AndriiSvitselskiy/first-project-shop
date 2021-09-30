@@ -3,7 +3,7 @@ import './header.css'
 import logo from './Img/logo_n.svg'
 import basket from './Img/basket.png'
 
-const Header=({itemsArray,hideAll,purchased})=>{
+const Header=({itemsArray,hideAll,purchased,filter,search})=>{
        const showProducts=()=>{
         hideAll()
         }
@@ -12,7 +12,11 @@ const Header=({itemsArray,hideAll,purchased})=>{
     <div  className="header flex">
        <img src={logo} alt="title" className="headerImg"/>
        <div className="search flex">
-            <input type="search" placeholder="Я шукаю..." results="0"/>
+            <input type="search"
+             placeholder="Я шукаю..."
+             results="0"
+             onChange={filter}
+             value={search}/>
             <button>Знайти</button>
         </div >
         <div>

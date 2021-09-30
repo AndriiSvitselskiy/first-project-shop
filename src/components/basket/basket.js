@@ -30,6 +30,8 @@ const elements=itemsArray.map(item=>{
 
     return(
         <div className={className}>
+           <div className="topicBasket">Вашi товари </div>
+           
            <div> {elements}</div>
            <div className="buy">
                <div>Всього до сплати: <span className="price">{currentPrice}$</span></div>

@@ -10,7 +10,7 @@
     justify-content: space-around;
    margin: 0 50px;
 }
-.basketProduct>div:nth-child(1){
+.basketProduct>div:nth-child(2){
     width: 70%;
 }
 .products{
@@ -22,13 +22,16 @@
     margin: 20px 0 20px 20px;
     border: 1px solid white;
     padding: 10px;
+    justify-content: space-around;
 }
-.products>div:nth-child(1){
+.products>div:nth-child(){
     width: 60%;
     
 }
 .products>div:nth-child(2){
     width: 40%;
+    margin-left: 20px;
+    
 }
 .buy{
     width: 20%;
@@ -51,4 +54,10 @@
 }
 .description div{
     margin: 30px 0;
+}
+.topicBasket{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
 }

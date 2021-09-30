@@ -23,6 +23,7 @@ const [basket,setBasket]=useState(true)
  const choseCategory=(category)=>{
   setHide(false)
   setBasket(true)
+  setSearch("")
       setSelectedGroup(category)
       allProducts.list.forEach(function(item){
     if(item.category===category){
@@ -43,18 +44,45 @@ const [basket,setBasket]=useState(true)
         setproductList(itemsArray)
         setPurchased(0)
  }
-          return(
+const [search,setSearch]=useState("")
+const [searchArray,setSearchArray]=useState([])
+const filter=(e)=>{
+setSearch(e.target.value)
+let result=[]
+if(e.target.value===""){
+  return (result=[],console.log(result))
+}else
+allProducts.list.forEach(function(item){
+    item.list.forEach(function(index){
+      let check=index.model
+      console.log(check)
+      if(check!==undefined){
+        const value=e.target.value
+        let answer=check.includes(value)
+        if(answer===true){
+       result.push(index)
+        }
+       }
+       setSearchArray(result)
+  })
+})
+}
+      return(
         <div>
           <Header products={selectedProducts} 
                   itemsArray={productList}
                   purchased={purchased}
-                  hideAll={hideAll}/>
+                  hideAll={hideAll}
+                  search={search}
+                  filter={(e)=>filter(e)}/>
           <TopicList list={allProducts.list} 
                      selected={(category)=>choseCategory(category)}/>
           <Main list={SelectedGroup}
                 products={showProducts}
                 addProducts={addProductToArray}
-                hide={hide}/>
+                hide={hide}
+                search={search}
+                searchArray={searchArray}/>
           <Basket style={basket}
                   itemsArray={productList}
                   clearList={clearList}/>
